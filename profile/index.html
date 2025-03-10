@@ -10,7 +10,7 @@
             const userId = params.get("userId");
 
             // Construct the deep link
-            if (postId && userId && streamToken) {
+            if (userId ) {
                 const deepLink = `com.test.showcar://post/${postId}`;
                 window.location.href = deepLink;
             } else {
