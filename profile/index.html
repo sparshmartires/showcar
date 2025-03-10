@@ -11,7 +11,7 @@
 
             // Construct the deep link
             if (userId ) {
-                const deepLink = `com.test.showcar://post/${userId}`;
+                const deepLink = `com.test.showcar://profile/${userId}`;
                 window.location.href = deepLink;
             } else {
                 document.body.innerHTML = "<h2>Invalid Link</h2>";
