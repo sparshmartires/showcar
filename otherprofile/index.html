@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        window.onload = function () {
+            const params = new URLSearchParams(window.location.search);
+            const userId = params.get("userId");
+
+            // Construct the deep link
+            if (userId ) {
+                const deepLink = `com.test.showcar://otherprofile/${userId}`;
+                window.location.href = deepLink;
+            } else {
+                document.body.innerHTML = "<h2>Invalid Link</h2>";
+            }
+        };
+    </script>
+</head>
+<body>
+    <h2>Redirecting...</h2>
+</body>
+</html>
