@@ -13,7 +13,7 @@
 
             // Construct the deep link
             if (postId && userId && streamToken) {
-                const deepLink = `com.test.showcar://post/${postId}/${userId}/${streamToken}`;
+                const deepLink = `com.nettbybilsenter.showcar://post/${postId}/${userId}/${streamToken}`;
                 window.location.href = deepLink;
             } else {
                 document.body.innerHTML = "<h2>Invalid Link</h2>";
